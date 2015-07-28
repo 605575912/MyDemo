@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values-w720dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_padding">420.0dip</dimen>
+    <dimen name="head_with">720.0dip</dimen>
+    <dimen name="image_head_with">150.0dip</dimen>
+    <dimen name="image_hight">130.0dip</dimen>
+    <dimen name="menu_with">300.0dip</dimen>
+</resources>

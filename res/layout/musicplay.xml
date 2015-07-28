@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:id="@+id/ret"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/m01" />
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="top"
+        android:text="利利！！！！"
+        android:textColor="#fe05f5"
+        android:textSize="35sp" />
+
+    </FrameLayout>
+
+ 
+
+</RelativeLayout>

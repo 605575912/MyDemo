@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="setting_view_lr_padding">10dp</dimen>
+    <dimen name="setting_view_tb_padding">5dp</dimen>
+    <dimen name="setting_view_title_size">16sp</dimen>
+    <dimen name="setting_view_subtitle_size">14sp</dimen>
+    <dimen name="switch_button_width">50dp</dimen>
+    <dimen name="switch_button_height">30dp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+
+    <!-- 对话框 -->
+    <dimen name="alert_dialog_title_height">50.0dip</dimen>
+    <dimen name="alert_dialog_button_height">50.0dip</dimen>
+    <dimen name="alert_dialog_message_height">40.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_left">20.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_right">20.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_top">15.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_bottom">15.0dip</dimen>
+    <dimen name="alert_dialog_title_margin_left">20.0dip</dimen>
+    <dimen name="alert_dialog_title_margin_right">20.0dip</dimen>
+    <dimen name="alert_dialog_frame_margin">20.0dip</dimen>
+    <dimen name="alert_dialog_min_width">320.0dip</dimen>
+    <dimen name="alert_dialog_title_textsize">19.0dip</dimen>
+    <dimen name="alert_dialog_message_textsize">17.0dip</dimen>
+    <dimen name="alert_dialog_button_textsize">17.0dip</dimen>
+    <dimen name="prostrokewidth">4.0dip</dimen>
+    <dimen name="bt_recordwidth">85.0dip</dimen>
+    <dimen name="bt_lookwidth">54.0dip</dimen>
+    <dimen name="emojis">40.0dip</dimen>
+    <dimen name="facechoose">100.0dip</dimen>
+    <dimen name="facepading">5dip</dimen>
+    <dimen name="nmrx">30.0dip</dimen>
+    <dimen name="rx">5.0dip</dimen>
+    <dimen name="chat_padding">10dip</dimen>
+    <dimen name="msg_pop">30.0dip</dimen>
+    <dimen name="msg_with">60.0dip</dimen>
+    <dimen name="menu_with">200.0dip</dimen>
+    <dimen name="head_with">100.0dip</dimen>
+    <dimen name="activity_padding">400.0dip</dimen>
+    <dimen name="image_head_with">150.0dip</dimen>
+    <dimen name="activit_top">5.0dip</dimen>
+    <dimen name="title_hight">50.0dip</dimen>
+    <dimen name="myfrend_hight">65.0dip</dimen>
+    <dimen name="head_hight">90.0dip</dimen>
+    <dimen name="image_hight">120.0dip</dimen>
+    <dimen name="setting_textSize">18sp</dimen>
+    <dimen name="setting_hight">45.0dip</dimen>
+    <dimen name="setting_go_hight">24.0dip</dimen>
+    <dimen name="setting_go_width">12.0dip</dimen>
+    <dimen name="setting_title_size">30sp</dimen>
+    <dimen name="setting_button_close">30dp</dimen>
+    <dimen name="game_logo_with">70dp</dimen>
+    <dimen name="game_logo_hight">70dp</dimen>
+    <dimen name="constelldailog_with">320.0dip</dimen>
+    <dimen name="sun_margin">25dip</dimen>
+    <dimen name="cloud_margin_top">75.0dip</dimen>
+    <dimen name="arc_radius">158.0dip</dimen>
+    <dimen name="arc_offset">19.0dip</dimen>
+    <dimen name="foot_to_mouth_offset">16.0dip</dimen>
+    <dimen name="arrow_margin_right">45.0dip</dimen>
+<!-- progress-->
+    <color name="cpv_default_color">#2196F3</color>
+    <dimen name="cpv_default_thickness">4dp</dimen>
+    <integer name="cpv_default_progress">0</integer>
+    <integer name="cpv_default_max_progress">100</integer>
+    <bool name="cpv_default_is_indeterminate">false</bool>
+    <bool name="cpv_default_anim_autostart">false</bool>
+    <integer name="cpv_default_anim_duration">4000</integer>
+    <integer name="cpv_default_anim_swoop_duration">5000</integer>
+    <integer name="cpv_default_anim_sync_duration">500</integer>
+    <integer name="cpv_default_anim_steps">3</integer>
+
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+</resources>

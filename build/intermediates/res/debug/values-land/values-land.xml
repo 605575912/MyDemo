@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values-land/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="head_with">10.0dip</dimen>
+    <dimen name="menu_with">300.0dip</dimen>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lzxmy.demo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_1"
+        android:label="@string/app_name">
+        <activity
+            android:name="com.lzxmy.demo.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lzxmy.demo.draglistview.DragListViewActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.lzxmy.demo.slidingpane.SlidingPaneActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.lzxmy.demo.foldingmenu.FoldingMenuActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.lzxmy.demo.cirelist.CirleListActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name="com.lzxmy.demo.settview.SettingActivity"></activity>
+        <activity android:name="com.lzxmy.demo.settview.IosStyleActivity"></activity>
+        <activity android:name="com.lzxmy.demo.settview.QQStyleActivity"></activity>
+        <activity android:name="com.lzxmy.demo.settview.XMLLayoutActivity"></activity>
+        <activity android:name="com.lzxmy.demo.waterdrop.WaterDropActivity"></activity>
+        <activity android:name="com.lzxmy.demo.wechat.WeChatActivity"></activity>
+        <activity android:name="com.lzxmy.demo.wireframe.WireFrameActivity"></activity>
+        <activity android:name="com.lzxmy.demo.wireframe.ActRotate"></activity>
+        <activity android:name="com.lzxmy.demo.musicplay.MusciPlayActivity"></activity>
+        <activity android:name="com.lzxmy.demo.locationimage.LocationImageActivity"></activity>
+        <activity android:name="com.lzxmy.demo.imgheadlistview.IMGHeaderActivity"></activity>
+        <activity android:name="com.lzxmy.demo.matrix.MatrixAcitivity"></activity>
+        <activity android:name="com.lzxmy.demo.listtitleview.ListTitleActivity"></activity>
+        <activity android:name="com.lzxmy.demo.damp.DampActivity"></activity>
+        <activity android:name="com.lzxmy.demo.layer.LayerDrawableActivity"></activity>
+        <activity android:name="com.lzxmy.demo.aidl.AidlActivity"></activity>
+
+        <service android:name="com.lzxmy.demo.aidl.MyService"></service>
+
+        <activity android:name="com.lzxmy.demo.drawstart.StartActivity"></activity>
+        <activity android:name="com.lzxmy.demo.drawwelcome.MainActivity58"></activity>
+        <activity android:name="com.lzxmy.demo.drawArc.ArcActivity"></activity>
+        <activity android:name="com.lzxmy.demo.swithbutton.SwithActivity"></activity>
+        <activity android:name="com.lzxmy.demo.Jumping.JumMainActivity"></activity>
+        <activity android:name="com.lzxmy.demo.swithbuttongif.SwithButtonActivity"></activity>
+        <activity android:name="com.lzxmy.demo.iosswitch.IosSwitchActivity"></activity>
+        <activity android:name="com.lzxmy.demo.multiaction.MultiActionActivity"></activity>
+        <activity android:name="com.lzxmy.demo.progress.ProgressActivity"></activity>
+        <activity android:name="com.lzxmy.demo.slidingTab.SlidingTabActivity"></activity>
+
+
+        <!-- 静态注册广播接收器 -->
+        <receiver
+            android:name="com.lzxmy.demo.endcall.MyReceiver"
+            android:permission="android.permission.CALL_PHONE">
+
+            <!-- 开机启动广播的过滤 -->
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <!-- 电话到来事件的过滤 -->
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 动态注册广播接收器的服务 -->
+        <service android:name="com.lzxmy.demo.endcall.DynamicRegisterService"></service>
+        <!-- 进行电话拦截的服务 -->
+        <service android:name="com.lzxmy.demo.endcall.EndCallService"></service>
+
+
+    </application>
+
+</manifest>

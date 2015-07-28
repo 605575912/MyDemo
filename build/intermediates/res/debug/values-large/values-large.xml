@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="setting_view_min_height">60dp</dimen>
+</resources>

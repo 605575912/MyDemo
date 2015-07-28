@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/dimens.xml -->
+    <eat-comment/>
+    <bool name="cpv_default_anim_autostart">false</bool>
+    <bool name="cpv_default_is_indeterminate">false</bool>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="background_tab_pressed">#000000</color>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/dimens.xml -->
+    <eat-comment/>
+    <color name="cpv_default_color">#2196F3</color>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="setting_view_item_bg_normal">#FFFFFFFF</color>
+    <color name="setting_view_item_bg_pressed">#FFF0F0F0</color>
+    <color name="setting_view_item_bg_pressed2">#FF4BAAFF</color>
+    <color name="setting_view_item_subtitle_text">#FFCCCCCC</color>
+    <color name="setting_view_item_title_text">#FF000000</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
+    <declare-styleable name="CircularProgressView"><attr format="float" name="cpv_progress"/><attr format="float" name="cpv_maxProgress"/><attr format="integer" name="cpv_animDuration"/><attr format="integer" name="cpv_animSwoopDuration"/><attr format="integer" name="cpv_animSyncDuration"/><attr format="color" name="cpv_color"/><attr format="dimension" name="cpv_thickness"/><attr format="boolean" name="cpv_indeterminate"/><attr format="boolean" name="cpv_animAutostart"/><attr format="integer" name="cpv_animSteps"/></declare-styleable>
+    <declare-styleable name="FoldingMenu"><attr format="integer" name="foldNumber"/></declare-styleable>
+    <declare-styleable name="ImgListView"><attr format="reference|color" name="headimage"/></declare-styleable>
+    <declare-styleable name="PagerSlidingTabStrip"><attr format="color" name="pstsIndicatorColor"/><attr format="color" name="pstsUnderlineColor"/><attr format="color" name="pstsDividerColor"/><attr format="dimension" name="pstsIndicatorHeight"/><attr format="dimension" name="pstsUnderlineHeight"/><attr format="dimension" name="pstsDividerPadding"/><attr format="dimension" name="pstsTabPaddingLeftRight"/><attr format="dimension" name="pstsScrollOffset"/><attr format="reference" name="pstsTabBackground"/><attr format="boolean" name="pstsShouldExpand"/><attr format="boolean" name="pstsTextAllCaps"/></declare-styleable>
+    <declare-styleable name="PullToRefresh"><attr format="reference|color" name="ptrRefreshableViewBackground"/><attr format="reference|color" name="ptrHeaderBackground"/><attr format="reference|color" name="ptrHeaderTextColor"/><attr format="reference|color" name="ptrHeaderSubTextColor"/><attr name="ptrMode"><flag name="disabled" value="0x0"/><flag name="pullFromStart" value="0x1"/><flag name="pullFromEnd" value="0x2"/><flag name="both" value="0x3"/><flag name="manualOnly" value="0x4"/><flag name="pullDownFromTop" value="0x1"/><flag name="pullUpFromBottom" value="0x2"/></attr><attr format="reference|boolean" name="ptrShowIndicator"/><attr format="reference" name="ptrDrawable"/><attr format="reference" name="ptrDrawableStart"/><attr format="reference" name="ptrDrawableEnd"/><attr format="reference|boolean" name="ptrOverScroll"/><attr format="reference" name="ptrHeaderTextAppearance"/><attr format="reference" name="ptrSubHeaderTextAppearance"/><attr name="ptrAnimationStyle"><flag name="rotate" value="0x0"/><flag name="flip" value="0x1"/></attr><attr format="reference|boolean" name="ptrScrollingWhileRefreshingEnabled"/><attr format="reference|boolean" name="ptrListViewExtrasEnabled"/><attr format="reference|boolean" name="ptrRotateDrawableWhilePulling"/><attr format="reference|color" name="ptrAdapterViewBackground"/><attr format="reference" name="ptrDrawableTop"/><attr format="reference" name="ptrDrawableBottom"/></declare-styleable>
+    <declare-styleable name="SeekCircle"><attr format="integer" name="progress"/><attr format="integer" name="max"/></declare-styleable>
+    <declare-styleable name="SettingView"><attr format="boolean" name="iOSStyle"/></declare-styleable>
+    <declare-styleable name="SettingViewItem"><attr format="string" name="title"/><attr format="string" name="subTitle"/><attr format="reference" name="titleColor"/><attr format="reference" name="subTitleColor"/><attr format="reference|dimension" name="titleSize"/><attr format="reference|dimension" name="subTitleSize"/><attr format="reference" name="drawable"/><attr format="reference" name="arrow"/><attr format="reference" name="check"/><attr format="reference" name="image"/><attr format="boolean" name="clickable"/><attr format="boolean" name="checked"/><attr format="reference" name="background"/></declare-styleable>
+    <declare-styleable name="ShSwitchView"><attr format="reference|color" name="tintColor"/><attr format="reference|dimension" name="outerStrokeWidth"/><attr format="reference|dimension" name="shadowSpace"/></declare-styleable>
+    <declare-styleable name="Switch"><attr format="string" name="textOn"/><attr format="string" name="textOff"/><attr format="dimension" name="thumbTextPadding"/><attr format="reference" name="switchTextAppearance"/><attr format="dimension" name="switchMinWidth"/><attr format="dimension" name="switchPadding"/><attr format="reference" name="thumb"/><attr format="reference" name="track"/></declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference" name="onDrawable"/><attr format="reference" name="offDrawable"/><attr format="reference" name="thumbDrawable"/><attr format="dimension|reference" name="thumb_margin"/><attr format="dimension|reference" name="thumb_marginTop"/><attr format="dimension|reference" name="thumb_marginBottom"/><attr format="dimension|reference" name="thumb_marginLeft"/><attr format="dimension|reference" name="thumb_marginRight"/><attr format="dimension|reference" name="thumb_width"/><attr format="dimension|reference" name="thumb_height"/><attr format="color|reference" name="onColor"/><attr format="color|reference" name="offColor"/><attr format="color|reference" name="thumbColor"/><attr format="color|reference" name="thumbPressedColor"/><attr format="integer" name="animationVelocity"/><attr format="integer" name="radius"/><attr format="float" name="measureFactor"/><attr format="dimension|reference" name="insetLeft"/><attr format="dimension|reference" name="insetRight"/><attr format="dimension|reference" name="insetTop"/><attr format="dimension|reference" name="insetBottom"/></declare-styleable>
+    <declare-styleable name="TextAppearance"><attr name="android:textColor"/><attr name="android:textSize"/><attr name="android:textStyle"/><attr name="android:typeface"/><attr name="android:textColorHighlight"/><attr name="android:textColorHint"/><attr name="android:textColorLink"/><attr format="boolean" name="textAllCaps"/></declare-styleable>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activit_top">5.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_padding">400.0dip</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="alert_dialog_button_height">50.0dip</dimen>
+    <dimen name="alert_dialog_button_textsize">17.0dip</dimen>
+    <dimen name="alert_dialog_frame_margin">20.0dip</dimen>
+    <dimen name="alert_dialog_message_height">40.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_bottom">15.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_left">20.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_right">20.0dip</dimen>
+    <dimen name="alert_dialog_message_margin_top">15.0dip</dimen>
+    <dimen name="alert_dialog_message_textsize">17.0dip</dimen>
+    <dimen name="alert_dialog_min_width">320.0dip</dimen>
+    <dimen name="alert_dialog_title_height">50.0dip</dimen>
+    <dimen name="alert_dialog_title_margin_left">20.0dip</dimen>
+    <dimen name="alert_dialog_title_margin_right">20.0dip</dimen>
+    <dimen name="alert_dialog_title_textsize">19.0dip</dimen>
+    <dimen name="arc_offset">19.0dip</dimen>
+    <dimen name="arc_radius">158.0dip</dimen>
+    <dimen name="arrow_margin_right">45.0dip</dimen>
+    <dimen name="bt_lookwidth">54.0dip</dimen>
+    <dimen name="bt_recordwidth">85.0dip</dimen>
+    <dimen name="chat_padding">10dip</dimen>
+    <dimen name="cloud_margin_top">75.0dip</dimen>
+    <dimen name="constelldailog_with">320.0dip</dimen>
+    <dimen name="cpv_default_thickness">4dp</dimen>
+    <dimen name="emojis">40.0dip</dimen>
+    <dimen name="facechoose">100.0dip</dimen>
+    <dimen name="facepading">5dip</dimen>
+    <dimen name="foot_to_mouth_offset">16.0dip</dimen>
+    <dimen name="game_logo_hight">70dp</dimen>
+    <dimen name="game_logo_with">70dp</dimen>
+    <dimen name="head_hight">90.0dip</dimen>
+    <dimen name="head_with">100.0dip</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+    <dimen name="horizontal_page_margin">@dimen/margin_medium</dimen>
+    <dimen name="image_head_with">150.0dip</dimen>
+    <dimen name="image_hight">120.0dip</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="menu_with">200.0dip</dimen>
+    <dimen name="msg_pop">30.0dip</dimen>
+    <dimen name="msg_with">60.0dip</dimen>
+    <dimen name="myfrend_hight">65.0dip</dimen>
+    <dimen name="nmrx">30.0dip</dimen>
+    <dimen name="prostrokewidth">4.0dip</dimen>
+    <dimen name="rx">5.0dip</dimen>
+    <dimen name="setting_button_close">30dp</dimen>
+    <dimen name="setting_go_hight">24.0dip</dimen>
+    <dimen name="setting_go_width">12.0dip</dimen>
+    <dimen name="setting_hight">45.0dip</dimen>
+    <dimen name="setting_textSize">18sp</dimen>
+    <dimen name="setting_title_size">30sp</dimen>
+    <dimen name="setting_view_lr_padding">10dp</dimen>
+    <dimen name="setting_view_subtitle_size">14sp</dimen>
+    <dimen name="setting_view_tb_padding">5dp</dimen>
+    <dimen name="setting_view_title_size">16sp</dimen>
+    <dimen name="sun_margin">25dip</dimen>
+    <dimen name="switch_button_height">30dp</dimen>
+    <dimen name="switch_button_width">50dp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="title_hight">50.0dip</dimen>
+    <dimen name="vertical_page_margin">@dimen/margin_medium</dimen>
+    <integer name="cpv_default_anim_duration">4000</integer>
+    <integer name="cpv_default_anim_steps">3</integer>
+    <integer name="cpv_default_anim_swoop_duration">5000</integer>
+    <integer name="cpv_default_anim_sync_duration">500</integer>
+    <integer name="cpv_default_max_progress">100</integer>
+    <integer name="cpv_default_progress">0</integer>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_album">我的相册</string>
+    <string name="action_card">我的银行卡</string>
+    <string name="action_collection">我的收藏</string>
+    <string name="action_feed">意见反馈</string>
+    <string name="action_plus">功能</string>
+    <string name="action_search">搜索</string>
+    <string name="action_settings">设置</string>
+    <string name="app_name">MyDemo</string>
+    <string name="plus_add_friend">添加朋友</string>
+    <string name="plus_group_chat">发起群聊</string>
+    <string name="plus_scan">扫一扫</string>
+    <string name="plus_take_photo">拍照分享</string>
+    <string name="plus_video_chat">视频聊天</string>
+    <string name="qq">QQ: 1076559197</string>
+    <string name="subTitle">SettingViewExamples SubTitle</string>
+    <string name="title">SettingViewExamples Title</string>
+    <string name="web">https://github.com/SkillCollege/</string>
+    <!-- From: file:/Users/apple/Documents/workspace/MyDemo/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="SettingViewArrow" parent="@style/SettingViewRight">
+        <item name="android:src">@drawable/setting_view_arrow</item>
+    </style>
+    <style name="SettingViewCheck" parent="@style/SettingViewRight">
+        <item name="android:src">@drawable/setting_view_check</item>
+    </style>
+    <style name="SettingViewContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_view_min_height</item>
+        <item name="android:background">@drawable/setting_view_item_selector</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="SettingViewIcon">
+        <item name="android:layout_width">@dimen/setting_view_min_height</item>
+        <item name="android:layout_height">@dimen/setting_view_min_height</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="SettingViewImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/setting_view_tb_padding</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="SettingViewRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:layout_marginRight">@dimen/setting_view_lr_padding</item>
+    </style>
+    <style name="SettingViewSubtitleH" parent="@style/SettingViewTextH">
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:textColor">@color/setting_view_item_subtitle_text</item>
+        <item name="android:textSize">@dimen/setting_view_subtitle_size</item>
+    </style>
+    <style name="SettingViewSubtitleV" parent="@style/SettingViewTextV">
+        <item name="android:gravity">left|top</item>
+        <item name="android:textSize">@dimen/setting_view_subtitle_size</item>
+        <item name="android:textColor">@color/setting_view_item_subtitle_text</item>
+    </style>
+    <style name="SettingViewSwitch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/setting_view_lr_padding</item>
+    </style>
+    <style name="SettingViewTextH">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">@dimen/setting_view_lr_padding</item>
+        <item name="android:paddingRight">@dimen/setting_view_lr_padding</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SettingViewTextV">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/setting_view_lr_padding</item>
+        <item name="android:paddingRight">@dimen/setting_view_lr_padding</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="SettingViewTitleH" parent="@style/SettingViewTextH">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/setting_view_item_title_text</item>
+        <item name="android:textSize">@dimen/setting_view_title_size</item>
+    </style>
+    <style name="SettingViewTitleV" parent="@style/SettingViewTextV">
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:textSize">@dimen/setting_view_title_size</item>
+        <item name="android:textColor">@color/setting_view_item_title_text</item>
+    </style>
+    <style name="Widget"/>
+    <style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style>
+    <style name="Widget.SampleMessageTile">
+        <item name="android:background">#ffffee</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowDy">-3.5</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.lzxmy.demo.swithbuttongif.SwitchButton
+        android:id="@+id/bt_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        app:animationVelocity="8"
+        app:measureFactor="1.5"
+        app:offDrawable="@drawable/ios_off"
+        app:onColor="#43d95d"
+        app:thumbDrawable="@drawable/ios_thumb"
+        app:thumb_marginBottom="-8dp"
+        app:thumb_marginLeft="-5dp"
+        app:thumb_marginRight="-5dp"
+        app:thumb_marginTop="-2.5dp"
+        />
+</LinearLayout>
