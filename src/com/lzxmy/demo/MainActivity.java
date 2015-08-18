@@ -14,6 +14,7 @@ import android.widget.ListView;
 import com.lzxmy.demo.Jumping.JumMainActivity;
 import com.lzxmy.demo.aidl.AidlActivity;
 import com.lzxmy.demo.cirelist.CirleListActivity;
+import com.lzxmy.demo.crop.CropMainActivity;
 import com.lzxmy.demo.damp.DampActivity;
 import com.lzxmy.demo.draglistview.DragListViewActivity;
 import com.lzxmy.demo.drawArc.ArcActivity;
@@ -83,6 +84,7 @@ public class MainActivity extends Activity {
         datas.add(new ChooseItem("文本部分变色可点击", 23));
         datas.add(new ChooseItem("滚动条", 24));
         datas.add(new ChooseItem("滚动条", 25));
+        datas.add(new ChooseItem("截图", 26));
         Typeface typeFace = Typeface.createFromAsset(getAssets(),
                 "fonts/SchmottoPlotto.ttf");
         adapter = new ListAdapter(MainActivity.this, datas, typeFace);
@@ -264,6 +266,13 @@ public class MainActivity extends Activity {
                     case 25: {// 图片叠层
 
                         intent.setClass(MainActivity.this, SlidingTabActivity.class);
+                        startActivity(intent);
+
+                    }
+                    break;
+                    case 26: {// 截图
+
+                        intent.setClass(MainActivity.this, CropMainActivity.class);
                         startActivity(intent);
 
                     }

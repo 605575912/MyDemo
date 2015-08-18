@@ -84,6 +84,7 @@
         <activity android:name="com.lzxmy.demo.multiaction.MultiActionActivity"></activity>
         <activity android:name="com.lzxmy.demo.progress.ProgressActivity"></activity>
         <activity android:name="com.lzxmy.demo.slidingTab.SlidingTabActivity"></activity>
+        <activity android:name="com.lzxmy.demo.crop.CropMainActivity"></activity>
 
 
         <!-- 静态注册广播接收器 -->

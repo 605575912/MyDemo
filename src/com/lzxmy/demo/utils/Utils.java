@@ -1,12 +1,5 @@
 package com.lzxmy.demo.utils;
 
-import java.lang.reflect.Method;
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -15,18 +8,28 @@ import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.provider.MediaStore;
 import android.text.TextPaint;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.ImageView;
+
+import java.lang.reflect.Method;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Utils {
 
@@ -379,4 +382,45 @@ public class Utils {
 	 * android.provider.Settings.System.putInt(getContentResolver(),
 	 * "show_touches", 1); 设置1显示，设置0不显示。
 	 */
+
+
+
+
+//	获取相册照片的路径地址之前是这么写的
+
+//	String getPath(Intent picdata) {
+//		Cursor cursor = getContentResolver().query(uri, proj, null, null,
+//				null);
+//		int column_index = cursor
+//				.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+//		cursor.moveToFirst();
+//		String temp = cursor.getString(column_index);
+//		if (cursor != null) {
+//			cursor.close();
+//			cursor = null;
+//		}
+//		return temp;
+//	}
+
+//	但是这个方法在4.2.2系统之后的小米手机上不能用 报空指针，改进方法如下：
+//	本人亲测
+	String getPath(Intent picdata,Context context) {
+		Uri uri = picdata.getData();
+		String[] proj = { MediaStore.Images.Media.DATA };
+		if ("content".equals(uri.getScheme())) {
+			Cursor cursor = context.getContentResolver().query(uri, proj, null, null,
+					null);
+			int column_index = cursor
+					.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+			cursor.moveToFirst();
+			String temp = cursor.getString(column_index);
+			if (cursor != null) {
+				cursor.close();
+				cursor = null;
+			}
+			return temp;
+		} else {
+			return uri.getPath();
+		}
+	}
 }

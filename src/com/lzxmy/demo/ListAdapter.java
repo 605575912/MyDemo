@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
-import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -75,7 +74,7 @@ public class ListAdapter extends BaseAdapter {
         style.setSpan(new ForegroundColorSpan(Color.RED), 1,
                 len,
                 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-        style.setSpan(new AbsoluteSizeSpan(23),1,3,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+//        style.setSpan(new AbsoluteSizeSpan(23),1,3,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 //		style.setSpan(new StyleSpan(typeFace.)), 1,
 //				chooseItem.getName().length() - 3,
 //				Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);

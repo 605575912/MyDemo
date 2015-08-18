@@ -1,15 +1,111 @@
 apply plugin: 'android'
-
-dependencies {
-    compile fileTree(include: '*.jar', dir: 'libs')
-}
-
 android {
-    packagingOptions {
-        exclude 'META-INF/NOTICE.txt'
-    }
     compileSdkVersion 21
-    buildToolsVersion '22.0.1'
+    buildToolsVersion '23.0.0 rc3'
+
+    defaultConfig {
+        applicationId "com.lzxmy.demo"
+        minSdkVersion 11
+        targetSdkVersion 19
+        versionCode 8
+        versionName "3.0.0"
+        multiDexEnabled true
+    }
+    lintOptions {
+        abortOnError false
+    }
+    signingConfigs {
+        debug {
+            // No debug config
+            storeFile file("../xili123.keystore")
+            storePassword "xili123"
+            keyAlias "xili123.keystore"
+            keyPassword "xili123"
+        }
+
+        release {
+            storeFile file("../xili123.keystore")
+            storePassword "xili123"
+            keyAlias "xili123.keystore"
+            keyPassword "xili123"
+        }
+    }
+    buildTypes {
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+
+            versionNameSuffix "-debug"
+            minifyEnabled false
+
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+
+            minifyEnabled false
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "${variant.productFlavors[0].name}_${defaultConfig.versionName}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }
+    }
+    productFlavors {
+        website {}
+//        GoolePlay {}
+//        Tencent {}
+//        BaiduChunhua {}
+//        360 {}
+//        PEA {}
+//        Anzhi {}
+//        yunos {}
+//        Jifeng {}
+//        PP {}
+//        Appchina {}
+//        163 {}
+//        sogou {}
+//        eoemarket {}
+//        N {}
+//        kingsoft {}
+//        3G {}
+//        mumayi {}
+//        suning {}
+//        zhuoyi {}
+//        anzhuo {}
+//        zol {}
+//        yybei {}
+//        sohu {}
+//        anzhuoyuan {}
+//        mi {}
+//        huawei {}
+//        lenovomobile {}
+//        meizu {}
+//        oppo {}
+//        nokia {}
+//        gionee {}
+//        samsung {}
+//        MM {}
+//        wo {}
+
+
+    }
+    //./gradlew assembleRelease
+
 
     sourceSets {
         main {
@@ -34,6 +130,9 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
-
     }
+}
+
+dependencies {
+    compile fileTree(include: '*.jar', dir: 'libs')
 }
