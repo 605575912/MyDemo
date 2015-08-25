@@ -30,6 +30,7 @@ import com.lzxmy.demo.matrix.MatrixAcitivity;
 import com.lzxmy.demo.musicplay.MusciPlayActivity;
 import com.lzxmy.demo.progress.ProgressActivity;
 import com.lzxmy.demo.settview.SettingActivity;
+import com.lzxmy.demo.shapedrawable.ShapeMainActivity;
 import com.lzxmy.demo.slidingTab.SlidingTabActivity;
 import com.lzxmy.demo.swithbutton.SwithActivity;
 import com.lzxmy.demo.swithbuttongif.SwithButtonActivity;
@@ -85,6 +86,7 @@ public class MainActivity extends Activity {
         datas.add(new ChooseItem("滚动条", 24));
         datas.add(new ChooseItem("滚动条", 25));
         datas.add(new ChooseItem("截图", 26));
+        datas.add(new ChooseItem("shape应用", 27));
         Typeface typeFace = Typeface.createFromAsset(getAssets(),
                 "fonts/SchmottoPlotto.ttf");
         adapter = new ListAdapter(MainActivity.this, datas, typeFace);
@@ -273,6 +275,13 @@ public class MainActivity extends Activity {
                     case 26: {// 截图
 
                         intent.setClass(MainActivity.this, CropMainActivity.class);
+                        startActivity(intent);
+
+                    }
+                    break;
+                    case 27: {// 截图
+
+                        intent.setClass(MainActivity.this, ShapeMainActivity.class);
                         startActivity(intent);
 
                     }
