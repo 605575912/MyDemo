@@ -184,8 +184,8 @@
         <attr name="cpv_animDuration" format="integer" />
         <attr name="cpv_animSwoopDuration" format="integer" />
         <attr name="cpv_animSyncDuration" format="integer" />
-        <attr name="cpv_color" format="color"/>
-        <attr name="cpv_thickness" format="dimension"/>
+        <attr name="cpv_color" format="color" />
+        <attr name="cpv_thickness" format="dimension" />
         <attr name="cpv_indeterminate" format="boolean" />
         <attr name="cpv_animAutostart" format="boolean" />
         <attr name="cpv_animSteps" format="integer" />
@@ -193,13 +193,13 @@
 
     <declare-styleable name="CropImageView">
         <attr name="guidelines">
-            <enum name="on" value="2"/>
-            <enum name="onTouch" value="1"/>
-            <enum name="off" value="0"/>
+            <enum name="on" value="2" />
+            <enum name="onTouch" value="1" />
+            <enum name="off" value="0" />
         </attr>
-        <attr name="fixAspectRatio" format="boolean"/>
-        <attr name="aspectRatioX" format="integer"/>
-        <attr name="aspectRatioY" format= "integer"/>
-        <attr name="imageResource" format="reference"/>
+        <attr name="fixAspectRatio" format="boolean" />
+        <attr name="aspectRatioX" format="integer" />
+        <attr name="aspectRatioY" format="integer" />
+        <attr name="imageResource" format="reference" />
     </declare-styleable>
 </resources>

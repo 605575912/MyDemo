@@ -1,11 +1,19 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.3'
+    }
+}
 apply plugin: 'android'
 android {
     compileSdkVersion 21
-    buildToolsVersion '23.0.0 rc3'
+    buildToolsVersion '23.0.0'
 
     defaultConfig {
         applicationId "com.lzxmy.demo"
-        minSdkVersion 11
+        minSdkVersion 10
         targetSdkVersion 19
         versionCode 8
         versionName "3.0.0"
@@ -17,14 +25,14 @@ android {
     signingConfigs {
         debug {
             // No debug config
-            storeFile file("../xili123.keystore")
+            storeFile file("xili123.keystore")
             storePassword "xili123"
             keyAlias "xili123.keystore"
             keyPassword "xili123"
         }
 
         release {
-            storeFile file("../xili123.keystore")
+            storeFile file("xili123.keystore")
             storePassword "xili123"
             keyAlias "xili123.keystore"
             keyPassword "xili123"
@@ -47,7 +55,7 @@ android {
             // 不显示Log
             buildConfigField "boolean", "LOG_DEBUG", "false"
 
-            minifyEnabled false
+            minifyEnabled true
             zipAlignEnabled true
             // 移除无用的resource文件
             shrinkResources true
